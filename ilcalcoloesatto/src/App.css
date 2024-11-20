@@ -1,0 +1,287 @@
+/* Layout principale */
+.App {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  color: white;
+  background-color: #282c34;
+}
+
+/* Header con i pulsanti */
+.header-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+/* Stile pulsanti */
+.nav-button {
+  background-color: #56a31c;
+  border: none;
+  padding: 10px 20px;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.nav-button:hover {
+  background-color: #3b7615;
+}
+
+/* Griglia dei numeri */
+.griglia-container {
+  margin-bottom: 20px;
+}
+
+.griglia-numeri {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr); /* 10 colonne */
+  gap: 5px;
+}
+
+.numero {
+  background-color: white;
+  color: black;
+  text-align: center;
+  border: 1px solid #ccc;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 3px;
+  transition: background-color 0.3s ease;
+}
+
+.numero.selezionato {
+  background-color: #56a31c;
+  color: white;
+}
+
+/* Tipo sviluppo e schedina */
+.tipo-sviluppo-schedina {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.campo-selezione {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  margin-right: 20px;
+}
+
+.campo-selezione label {
+  margin-bottom: 5px;
+  color: white;
+}
+
+.campo-selezione select {
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  background-color: white;
+  color: black;
+}
+
+/* Condizioni e informazioni */
+.condizioni-info {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.condizioni, .informazioni {
+  flex: 1;
+  padding: 10px;
+  background-color: #3b3b3b;
+  border: 1px solid #444;
+  border-radius: 5px;
+}
+
+.condizioni h3, .informazioni h3 {
+  margin-bottom: 10px;
+}
+
+/* Colonne finali */
+.colonne-finali {
+  margin-top: 20px;
+}
+
+.colonne-finali h2 {
+  margin-bottom: 10px;
+}
+
+.colonne-finali table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.colonne-finali th, .colonne-finali td {
+  border: 1px solid #ccc;
+  padding: 5px;
+  text-align: center;
+}
+
+.colonne-finali th {
+  background-color: #56a31c;
+  color: white;
+}
+
+.colonne-finali td {
+  background-color: white;
+  color: black;
+}
+
+/* Stile per la sezione Condizioni */
+.condizioni {
+  padding: 10px;
+  background-color: #3b3b3b;
+  border: 1px solid #444;
+  border-radius: 5px;
+}
+
+.condizioni h3 {
+  margin-bottom: 10px;
+  color: white;
+}
+
+.campo-condizione {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  color: white;
+}
+
+.campo-condizione label {
+  flex: 1;
+  margin-right: 10px;
+}
+
+.campo-condizione input {
+  flex: 1;
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  background-color: white;
+  color: black;
+}
+
+.campo-condizione input[type="number"] {
+  width: 60px;
+  text-align: center;
+}
+
+.campo-condizione input[placeholder="da"],
+.campo-condizione input[placeholder="a"] {
+  width: 50px;
+}
+
+/* Contenitore per Condizioni e Ruote */
+.condizioni-info {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+/* Stile per il div Condizioni */
+.condizioni {
+  flex: 1;
+  padding: 10px;
+  background-color: #3b3b3b;
+  border: 1px solid #444;
+  border-radius: 5px;
+}
+
+.condizioni h3 {
+  margin-bottom: 10px;
+  color: white;
+}
+
+.campo-condizione {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  color: white;
+}
+
+.campo-condizione label {
+  flex: 1;
+  margin-right: 10px;
+}
+
+.campo-condizione input {
+  flex: 1;
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  background-color: white;
+  color: black;
+}
+
+/* Stile per il div Ruote e Informazioni */
+.ruote-info {
+  flex: 1;
+  padding: 10px;
+  background-color: #3b3b3b;
+  border: 1px solid #444;
+  border-radius: 5px;
+}
+
+.ruote-info h3 {
+  margin-bottom: 10px;
+  color: white;
+}
+
+/* Campo checkbox per le ruote */
+.campo-ruota {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.campo-ruota label {
+  margin-left: 5px;
+  color: white;
+}
+
+/* Stile per il checkbox "Tutte le ruote" */
+#tutte {
+  margin-right: 5px;
+}
+
+.informazioni p {
+  margin: 5px 0;
+  color: white;
+}
+
+
+
+/* Media query per dispositivi mobili */
+@media (max-width: 768px) {
+  .header-buttons {
+    flex-direction: column; /* Pulsanti in verticale */
+    align-items: center;
+    gap: 10px;
+  }
+
+  .tipo-sviluppo-schedina {
+    flex-direction: column; /* Campi uno sotto l'altro */
+    gap: 10px;
+  }
+
+  .condizioni-info {
+    flex-direction: column; /* Condizioni e Informazioni impilate */
+    gap: 10px;
+  }
+
+  .griglia-numeri {
+    grid-template-columns: repeat(5, 1fr); /* 5 colonne per numeri */
+  }
+
+  .colonne-finali table {
+    font-size: 12px; /* Riduzione font per tabelle */
+  }
+}

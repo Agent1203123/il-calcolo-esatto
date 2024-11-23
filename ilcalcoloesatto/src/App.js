@@ -158,6 +158,8 @@ function App() {
       <input type="number" min="0" placeholder="da" />
       <input type="number" min="0" placeholder="a" />
     </div>
+    <button type="button" className="btn-calcola">Calcola</button>
+
   </div>
 
  {/* Div Ruote e Informazioni */}
